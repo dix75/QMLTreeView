@@ -193,6 +193,14 @@ void TreeModel::clear()
    emit layoutChanged();
 }
 
+void TreeModel::reload()
+{
+   emit layoutAboutToBeChanged();
+   beginResetModel();
+   endResetModel();
+   emit layoutChanged();
+}
+
 TreeItem* TreeModel::internalPointer(const QModelIndex& index) const
 {
    return static_cast<TreeItem* >(index.internalPointer());

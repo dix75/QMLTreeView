@@ -72,6 +72,9 @@ public:
    //! Remove all the elements from the tree.
    Q_INVOKABLE void clear();
 
+   //! Reload all the elements in the tree.
+   Q_INVOKABLE void reload();
+
 private:
    TreeItem* internalPointer(const QModelIndex& index) const;
 

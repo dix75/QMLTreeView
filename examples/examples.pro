@@ -6,7 +6,8 @@ SUBDIRS += \
    styled \
    customdelegate \
    json \
-   manipulator
+   manipulator \
+   proxy \
 
 DISTFILES += \
    $$files(modules/QMLTreeView/*)
