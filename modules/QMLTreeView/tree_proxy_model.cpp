@@ -16,6 +16,7 @@ void TreeProxyModel::setFilter(const QString& filter) noexcept
   emit filterChanged();
 
   invalidateFilter();
+  reload();
 }
 
 const QString& TreeProxyModel::filter() const noexcept
@@ -47,7 +48,5 @@ bool TreeProxyModel::filterAcceptsRow(int row, const QModelIndex& index) const
 {
   const auto& indx = sourceModel()->index(row, 0, index);
   const auto& name = indx.data(Qt::DisplayRole).toString();
-  auto const res = name.contains(_filter);
-  //qDebug() << row << name << index << res;
-  return res;
+  return name.contains(_filter);
 }

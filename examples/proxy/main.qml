@@ -20,7 +20,6 @@ Window {
       placeholderText: qsTr("Enter filter text")
       Keys.onReleased: {
         treeProxyModel.filter = text
-        treeProxyModel.reload()
       }
     }
 
