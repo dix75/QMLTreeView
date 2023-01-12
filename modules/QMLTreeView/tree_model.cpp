@@ -195,9 +195,9 @@ void TreeModel::clear()
 
 void TreeModel::reload()
 {
-   emit layoutAboutToBeChanged();
-   beginResetModel();
-   endResetModel();
+  emit layoutAboutToBeChanged();
+   //beginResetModel();
+   //endResetModel();
    emit layoutChanged();
 }
 

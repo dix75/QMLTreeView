@@ -42,9 +42,9 @@ Window {
       rowSpacing: 12
       font.pixelSize: 20
 
-      onCurrentIndexChanged: console.log("current index is (row=" + currentIndex.row + ", depth=" + model.depth(currentIndex) + ")")
-      onCurrentDataChanged: console.log("current data is " + currentData)
-      onCurrentItemChanged: console.log("current item is " + currentItem)
+     // onCurrentIndexChanged: console.log("current index is (row=" + currentIndex.row + ", depth=" + model.depth(currentIndex) + ")")
+     // onCurrentDataChanged: console.log("current data is " + currentData)
+     // onCurrentItemChanged: console.log("current item is " + currentItem)
     }
   }
 }

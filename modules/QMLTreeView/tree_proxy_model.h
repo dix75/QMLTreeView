@@ -40,7 +40,7 @@ s  * \param[in] parent the Parent object
   Q_INVOKABLE QModelIndex rootIndex();
 
   //! Return the depth of the item for the selected index.
-  // Q_INVOKABLE int depth(const QModelIndex& index) const;
+  Q_INVOKABLE int depth(const QModelIndex& index) const;
 
   //! Remove all the elements from the tree.
   Q_INVOKABLE void clear();

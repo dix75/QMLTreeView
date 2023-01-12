@@ -28,10 +28,10 @@ QModelIndex TreeProxyModel::rootIndex()
   return {};
 }
 
-// int TreeProxyModel::depth(const QModelIndex& index) const
-// {
-//   return (static_cast<TreeModel*>(sourceModel()))->depth(mapToSource(index));
-// }
+ int TreeProxyModel::depth(const QModelIndex& index) const
+ {
+   return (static_cast<TreeModel*>(sourceModel()))->depth(mapToSource(index));
+ }
 
 void TreeProxyModel::clear()
 {
